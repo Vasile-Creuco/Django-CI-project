@@ -28,11 +28,8 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
-                - name: TypeScript report
-        uses: fersilva16/ts-report-action@1.2.1
-        with:
-          # TypeScript project file
-          project: # optional
-          # Files to check
-          files: # optional
-            
+    - name: TypeScript report
+      uses: fersilva16/ts-report-action@1.2.1
+      with:
+        project: # optional
+        files: # optional
